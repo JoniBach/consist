@@ -1,0 +1,11 @@
+export declare function startsWith(str: string, substring: string): boolean;
+export declare function endsWith(str: string, substring: string): boolean;
+export declare function contains(str: string, substring: string): boolean;
+export declare function matches(str: string, regex: RegExp): boolean;
+export declare function regex(str: string, regex: RegExp): boolean;
+export declare function lengthEquals(str: string, length: number): boolean;
+export declare function lengthGreaterThan(str: string, length: number): boolean;
+export declare function lengthLessThan(str: string, length: number): boolean;
+export declare function validURL(str: string): boolean;
+export declare function validEmail(email: string): boolean;
+export declare function domainMatches(url: string, domain: string): boolean;

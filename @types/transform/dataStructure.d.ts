@@ -1,0 +1,37 @@
+export declare function objectToArray(obj: Record<string, any>): Array<[string, any]>;
+export declare function arrayToObject(array: Array<[string, any]>): Record<string, any>;
+export declare function mapToObject<T>(map: Map<string, T>): Record<string, T>;
+export declare function objectToMap<T>(obj: Record<string, T>): Map<string, T>;
+export declare function setToArray(set: Set<any>): any[];
+export declare function arrayToSet(array: any[]): Set<any>;
+export declare function arrayToFlatArray(array: any[]): any[];
+export declare function arrayToGroup(array: Array<Record<string, any>>, key: string): Record<string, Array<Record<string, any>>>;
+export declare function objectValuesToString<T>(obj: Record<string, T>): string;
+export declare function objectKeysToString<T>(obj: Record<string, T>): string;
+export declare function objectToString<T>(obj: Record<string, T>): string;
+export declare function objectToQueryString(obj: Record<string, any>): string;
+export declare function objectArrayValuesToString<T>(array: Record<string, T>[]): string;
+export declare function objectArrayKeysToString<T>(array: Record<string, T>[]): string;
+export declare function objectArrayToString<T>(array: Record<string, T>[]): string;
+export declare function objectArrayToQueryString(array: Record<string, any>[]): string;
+export declare function objectArrayToArrayOfString(array: Record<string, any>[]): string[];
+export declare function nestedObjectArrayValuesToString<T>(array: Record<string, T>[]): string;
+export declare function nestedObjectArrayKeysToString<T>(array: Record<string, T>[]): string;
+export declare function nestedObjectArrayToString<T>(array: Record<string, T>[]): string;
+export declare function nestedObjectArrayToQueryString(array: Record<string, any>[]): string;
+export declare function nestedObjectArrayToArrayOfString(nestedArray: any): string[];
+export declare function stringToObject(str: string): Record<string, any>;
+export declare function stringToArray(str: string): Array<[string, any]>;
+export declare function arrayWithObjectAndString<T>(array: Record<string, T>[]): Array<{
+    original: Record<string, T>;
+    objectString: string;
+}>;
+export declare function searchString(text: string, searchTerm: string): boolean;
+type OriginalObject = Record<string, string | number | undefined>;
+type TransformedObject = {
+    original: OriginalObject;
+    objectString: string;
+};
+export declare function filterArrayByStringRaw(array: TransformedObject[], searchTerm: string): TransformedObject[];
+export declare function filterArrayByString(array: TransformedObject[], searchTerm: string): OriginalObject[];
+export {};

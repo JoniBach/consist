@@ -1,0 +1,44 @@
+{
+  "name": "consist",
+  "version": "2.0.1",
+  "description": "A library for serving well ordered conditional logic",
+  "main": "dist/index.js",
+  "types": "@types/index.d.ts",
+  "scripts": {
+    "test": "glob -c \"node -r ts-node/register --no-warnings --test\" \"./tests/**/*.test.ts\"",
+    "coverage": "nyc npm run test",
+    "build": "tsc",
+    "build:test": "node test-and-build.js",
+    "release": "npm publish --access public"
+  },
+  "keywords": [],
+  "author": "JoniBach",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoniBach/consist.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.11.30",
+    "@types/pako": "^2.0.3",
+    "@types/papaparse": "^5.3.14",
+    "@types/xml2js": "^0.4.14",
+    "glob": "^10.3.10",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "assert": "^2.1.0",
+    "js-yaml": "^4.1.0",
+    "marked": "^12.0.1",
+    "nyc": "^15.1.0",
+    "pako": "^2.1.0",
+    "papaparse": "^5.4.1",
+    "ts-node": "^10.9.2",
+    "xml2js": "^0.6.2"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
